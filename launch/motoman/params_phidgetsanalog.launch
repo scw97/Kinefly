@@ -67,10 +67,10 @@
     <param name="flystate2phidgetsanalog/v2hr"        type="double" value="0.0" />
     <param name="flystate2phidgetsanalog/v2aa"        type="double" value="0.0" />
     <param name="flystate2phidgetsanalog/v2ar"        type="double" value="0.0" />
-    <param name="flystate2phidgetsanalog/v2l1"        type="double" value="5.0" />
+    <param name="flystate2phidgetsanalog/v2l1"        type="double" value="80.0" />
     <param name="flystate2phidgetsanalog/v2l2"        type="double" value="0.0" />
     <param name="flystate2phidgetsanalog/v2lr"        type="double" value="0.0" />
-    <param name="flystate2phidgetsanalog/v2r1"        type="double" value="-5.0" />
+    <param name="flystate2phidgetsanalog/v2r1"        type="double" value="-80.0" />
     <param name="flystate2phidgetsanalog/v2r2"        type="double" value="0.0" />
     <param name="flystate2phidgetsanalog/v2rr"        type="double" value="0.0" />
     <param name="flystate2phidgetsanalog/v2xi"        type="double" value="0.0" />

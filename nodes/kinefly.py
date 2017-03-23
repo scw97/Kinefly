@@ -618,7 +618,7 @@ class MainWindow:
                 img = np.zeros((320,240))
 
             # Scale the image.
-            self.imgUnscaled = img
+            self.imgUnscaled = cv2.pyrUp(cv2.pyrUp(img))
             if (self.scale == 1.0):              
                 self.imgScaled = self.imgUnscaled
             else:  
