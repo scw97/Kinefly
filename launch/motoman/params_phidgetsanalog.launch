@@ -88,7 +88,7 @@
     <param name="flystate2phidgetsanalog/v3r1"        type="double" value="0.0" />
     <param name="flystate2phidgetsanalog/v3r2"        type="double" value="0.0" />
     <param name="flystate2phidgetsanalog/v3rr"        type="double" value="0.0" />
-    <param name="flystate2phidgetsanalog/v3xi"        type="double" value="10.0" />
+    <param name="flystate2phidgetsanalog/v3xi"        type="double" value="0.0" />
     
 
 </launch>

@@ -25,7 +25,7 @@ class Flystate2PhidgetsAnalog:
         rospy.init_node(self.name, anonymous=True)
         self.nodename = rospy.get_name()
         self.namespace = rospy.get_namespace()
-        
+        rospy.logwarn(self.nodename)
         # Load the parameters.
         self.params = rospy.get_param('%s' % self.nodename.rstrip('/'), {})
         self.defaults = {'v0enable':True, 'v1enable':True, 'v2enable':True, 'v3enable':True, 
@@ -241,6 +241,8 @@ class Flystate2PhidgetsAnalog:
             rospy.logwarn('Parameters are settable as launch-time parameters.')
             rospy.logwarn('')
 
+        if (self.command == 'led_on'):
+            rospy.logwarn('led_on_cmd')
     
         
     def run(self):
