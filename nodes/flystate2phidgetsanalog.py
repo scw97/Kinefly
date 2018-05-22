@@ -242,8 +242,14 @@ class Flystate2PhidgetsAnalog:
             rospy.logwarn('')
 
         if (self.command == 'led_on'):
+            self.a[3,0] = 1.0
             rospy.logwarn('led_on_cmd')
+
+        if (self.command == 'led_off'):
+            self.a[3,0] = 0.0
+            rospy.logwarn('led_off_cmd')
     
+        uf 
         
     def run(self):
         rospy.spin()
