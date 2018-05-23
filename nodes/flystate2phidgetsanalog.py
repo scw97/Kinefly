@@ -241,15 +241,10 @@ class Flystate2PhidgetsAnalog:
             rospy.logwarn('Parameters are settable as launch-time parameters.')
             rospy.logwarn('')
 
-        if (self.command == 'led_on'):
-            self.a[3,0] = 1.0
-            rospy.logwarn('led_on_cmd')
-
-        if (self.command == 'led_off'):
-            self.a[3,0] = 0.0
-            rospy.logwarn('led_off_cmd')
-    
-        uf 
+        if (self.command[:7] == 'set_a30'):
+            V = float(self.command[7:])
+            self.a[3,0] = V
+            rospy.logwarn('a30 set to %s'%V)
         
     def run(self):
         rospy.spin()
