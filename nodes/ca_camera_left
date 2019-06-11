@@ -1,0 +1,181 @@
+arena_camera:
+  camera_nodelet: {auto_exposure: true, auto_gain: true, auto_shutter: true, auto_white_balance: true,
+    brightness: 0.0, enable_strobe1: false, enable_trigger: false, enable_trigger_delay: false,
+    exposure: 1.35, format7_color_coding: raw8, format7_roi_height: 0, format7_roi_width: 0,
+    format7_x_offset: 0, format7_y_offset: 0, frame_id: camera, frame_rate: 30.0,
+    gain: 0.0, gamma: 1.0, pan: 0, serial: 14432681, shutter_speed: 0.03, strobe1_delay: 0.0,
+    strobe1_duration: 1.0, strobe1_polarity: 0, tilt: 0, trigger_delay: 0.0, trigger_mode: mode0,
+    trigger_parameter: 0, trigger_polarity: 0, trigger_source: gpio0, video_mode: format7_mode0,
+    white_balance_blue: 800, white_balance_red: 550}
+  image_color:
+    compressed: {format: jpeg, jpeg_quality: 80, png_level: 9}
+    compressedDepth: {depth_max: 10.0, depth_quantization: 100.0, png_level: 9}
+    theora: {keyframe_frequency: 64, optimize_for: 1, quality: 31, target_bitrate: 800000}
+  image_mono:
+    compressed: {format: jpeg, jpeg_quality: 80, png_level: 9}
+    compressedDepth: {depth_max: 10.0, depth_quantization: 100.0, png_level: 9}
+    theora: {keyframe_frequency: 64, optimize_for: 1, quality: 31, target_bitrate: 800000}
+  image_proc_debayer: {debayer: 0}
+  image_raw:
+    compressed: {format: jpeg, jpeg_quality: 80, png_level: 9}
+    compressedDepth: {depth_max: 10.0, depth_quantization: 100.0, png_level: 9}
+    theora: {keyframe_frequency: 64, optimize_for: 1, quality: 31, target_bitrate: 800000}
+ca_camera_left:
+  camera_nodelet: {auto_exposure: false, auto_gain: false, auto_shutter: false, auto_white_balance: false,
+    brightness: 5.46875, enable_strobe1: false, enable_trigger: true, enable_trigger_delay: false,
+    exposure: 1.3487548828125, format7_color_coding: mono8, format7_roi_height: 0,
+    format7_roi_width: 0, format7_x_offset: 0, format7_y_offset: 0, frame_id: camera,
+    frame_rate: 120.0, gain: 23.517587661743164, gamma: 1.0, pan: 0, serial: 16398533,
+    shutter_speed: 5.704164505004883e-05, strobe1_delay: 0.0, strobe1_duration: 1.0,
+    strobe1_polarity: 0, tilt: 0, trigger_delay: 1.5497207641601562e-05, trigger_mode: mode1,
+    trigger_parameter: 0, trigger_polarity: 0, trigger_source: gpio0, video_mode: format7_mode5,
+    white_balance_blue: 0, white_balance_red: 0}
+  image_color:
+    compressed: {format: jpeg, jpeg_quality: 80, png_level: 9}
+    compressedDepth: {depth_max: 10.0, depth_quantization: 100.0, png_level: 9}
+    theora: {keyframe_frequency: 64, optimize_for: 1, quality: 31, target_bitrate: 800000}
+  image_mono:
+    compressed: {format: jpeg, jpeg_quality: 80, png_level: 9}
+    compressedDepth: {depth_max: 10.0, depth_quantization: 100.0, png_level: 9}
+    theora: {keyframe_frequency: 64, optimize_for: 1, quality: 31, target_bitrate: 800000}
+  image_proc_debayer: {debayer: 0}
+  image_raw:
+    compressed: {format: jpeg, jpeg_quality: 80, png_level: 9}
+    compressedDepth: {depth_max: 10.0, depth_quantization: 100.0, png_level: 9}
+    theora: {keyframe_frequency: 64, optimize_for: 1, quality: 31, target_bitrate: 800000}
+ca_camera_right:
+  camera_nodelet: {auto_exposure: false, auto_gain: false, auto_shutter: false, auto_white_balance: false,
+    brightness: 5.46875, enable_strobe1: false, enable_trigger: true, enable_trigger_delay: false,
+    exposure: 1.3487548828125, format7_color_coding: mono8, format7_roi_height: 0,
+    format7_roi_width: 0, format7_x_offset: 0, format7_y_offset: 0, frame_id: camera,
+    frame_rate: 120.0, gain: 23.517587661743164, gamma: 1.0, pan: 0, serial: 16363686,
+    shutter_speed: 5.704164505004883e-05, strobe1_delay: 0.0, strobe1_duration: 1.0,
+    strobe1_polarity: 0, tilt: 0, trigger_delay: 1.5497207641601562e-05, trigger_mode: mode1,
+    trigger_parameter: 0, trigger_polarity: 0, trigger_source: gpio0, video_mode: format7_mode5,
+    white_balance_blue: 0, white_balance_red: 0}
+  image_color:
+    compressed: {format: jpeg, jpeg_quality: 80, png_level: 9}
+    compressedDepth: {depth_max: 10.0, depth_quantization: 100.0, png_level: 9}
+    theora: {keyframe_frequency: 64, optimize_for: 1, quality: 31, target_bitrate: 800000}
+  image_mono:
+    compressed: {format: jpeg, jpeg_quality: 80, png_level: 9}
+    compressedDepth: {depth_max: 10.0, depth_quantization: 100.0, png_level: 9}
+    theora: {keyframe_frequency: 64, optimize_for: 1, quality: 31, target_bitrate: 800000}
+  image_proc_debayer: {debayer: 0}
+  image_raw:
+    compressed: {format: jpeg, jpeg_quality: 80, png_level: 9}
+    compressedDepth: {depth_max: 10.0, depth_quantization: 100.0, png_level: 9}
+    theora: {keyframe_frequency: 64, optimize_for: 1, quality: 31, target_bitrate: 800000}
+kine_camera_1:
+  camera_nodelet: {auto_exposure: false, auto_gain: false, auto_shutter: false, auto_white_balance: false,
+    brightness: 1.3671875, enable_strobe1: false, enable_trigger: false, enable_trigger_delay: false,
+    exposure: 1.3487548828125, format7_color_coding: mono8, format7_roi_height: 0,
+    format7_roi_width: 0, format7_x_offset: 0, format7_y_offset: 0, frame_id: camera,
+    frame_rate: 84.0001220703125, gain: 0.0, gamma: 1.0, pan: 0, serial: 16456195,
+    shutter_speed: 0.05001348114013672, strobe1_delay: 0.0, strobe1_duration: 1.0,
+    strobe1_polarity: 0, tilt: 0, trigger_delay: 1.627206802368164e-05, trigger_mode: mode14,
+    trigger_parameter: 0, trigger_polarity: 0, trigger_source: gpio0, video_mode: format7_mode0,
+    white_balance_blue: 0, white_balance_red: 0}
+  image_color:
+    compressed: {format: jpeg, jpeg_quality: 80, png_level: 9}
+    compressedDepth: {depth_max: 10.0, depth_quantization: 100.0, png_level: 9}
+    theora: {keyframe_frequency: 64, optimize_for: 1, quality: 31, target_bitrate: 800000}
+  image_mono:
+    compressed: {format: jpeg, jpeg_quality: 80, png_level: 9}
+    compressedDepth: {depth_max: 10.0, depth_quantization: 100.0, png_level: 9}
+    theora: {keyframe_frequency: 64, optimize_for: 1, quality: 31, target_bitrate: 800000}
+  image_proc_debayer: {debayer: 0}
+  image_raw:
+    compressed: {format: jpeg, jpeg_quality: 80, png_level: 9}
+    compressedDepth: {depth_max: 10.0, depth_quantization: 100.0, png_level: 9}
+    theora: {keyframe_frequency: 64, optimize_for: 1, quality: 31, target_bitrate: 800000}
+kinefly:
+  abdomen: {autozero: true, threshold: 0.02, tracker: tip}
+  aux: {tracker: intensity}
+  filenameBackground: /home/imager/kinefly.png
+  flystate2phidgetsanalog: {autorange: false, serial: 0, v00: 0.0, v0aa: 0.0, v0ar: 0.0,
+    v0enable: true, v0ha: 0.0, v0hr: 0.0, v0l1: 5.0, v0l2: 0.0, v0lr: 0.0, v0r1: 0.0,
+    v0r2: 0.0, v0rr: 0.0, v0xi: 0.0, v10: 0.0, v1aa: 0.0, v1ar: 0.0, v1enable: true,
+    v1ha: 0.0, v1hr: 0.0, v1l1: 0.0, v1l2: 0.0, v1lr: 0.0, v1r1: 5.0, v1r2: 0.0, v1rr: 0.0,
+    v1xi: 0.0, v20: 0.043, v2aa: 0.0, v2ar: 0.0, v2enable: true, v2ha: 0.0, v2hr: 0.0,
+    v2l1: 5.0, v2l2: 0.0, v2lr: 0.0, v2r1: -5.0, v2r2: 0.0, v2rr: 0.0, v2xi: 0.0,
+    v30: 0.0, v3aa: 0.0, v3ar: 0.0, v3enable: true, v3ha: 0.0, v3hr: 0.0, v3l1: 0.0,
+    v3l2: 0.0, v3lr: 0.0, v3r1: 0.0, v3r2: 0.0, v3rr: 0.0, v3xi: 0.0}
+  gui:
+    abdomen:
+      angle_hi: 3.927
+      angle_lo: 2.3562
+      hinge: {x: 347.0, y: 277.0}
+      radius_inner: 100.0
+      radius_outer: 120.0
+      stabilize: false
+      subtract_bg: false
+      track: false
+    aux:
+      angle: 0.0
+      center: {x: 418.0, y: 167.0}
+      radius1: 30.0
+      radius2: 20.0
+      subtract_bg: false
+      track: true
+    axis:
+      pt1: {x: 310, y: 150}
+      pt2: {x: 310, y: 250}
+      track: false
+    head:
+      angle_hi: 0.7854
+      angle_lo: -0.7854
+      hinge: {x: 262.0, y: 264.0}
+      radius_inner: 50.0
+      radius_outer: 80.0
+      stabilize: false
+      subtract_bg: false
+      track: false
+    left:
+      angle_hi: -0.1689572815932956
+      angle_lo: -2.189611093532582
+      hinge: {x: 317.11234130520995, y: 314.1512181594154}
+      radius_inner: 44.02042845696139
+      radius_outer: 158.6297544745704
+      stabilize: false
+      subtract_bg: false
+      track: true
+    right:
+      angle_hi: 2.189611093532582
+      angle_lo: 0.1689572815932956
+      hinge: {x: 329.5827525536747, y: 232.6139138425316}
+      radius_inner: 44.02042845696139
+      radius_outer: 158.6297544745704
+      stabilize: false
+      subtract_bg: false
+      track: true
+    symmetric: true
+    windows: false
+  head: {autozero: true, feathering: 0.0, threshold: 0.0, tracker: area}
+  image_topic: /kine_camera_1/image_raw
+  left: {autozero: true, saturation_correction: false, threshold: 0.005, tracker: edge}
+  n_edges_max: 1
+  n_queue_images: 2
+  parameterfile: /home/imager/kinefly.yaml
+  rc_background: 100000.0
+  right: {autozero: true, saturation_correction: false, threshold: 0.005, tracker: edge}
+  scale_image: 1.0
+  use_gui: true
+  wingbeat_max: 220.0
+  wingbeat_min: 180.0
+live_viewer_left: {image_topic: /ca_camera_left/image_raw}
+live_viewer_right: {image_topic: /ca_camera_right/image_raw}
+phidgets_daq: {interpreter_path: /home/imager/catkin/src/phidgets_daq/demo/phidgets_daq_interpreter_functions.py,
+  ratiometric: false, update_rate_ms: 4}
+rosdistro: 'kinetic
+
+  '
+roslaunch:
+  uris: {host_imager16__39778: 'http://imager16:39778/', host_imager16__42538: 'http://imager16:42538/'}
+rosversion: '1.12.7
+
+  '
+run_id: 3a1ef628-7e52-11e8-9090-94de800da140
+unmixer_left: {image_topic: /ca_camera_left/image_raw}
+unmixer_right: {image_topic: /ca_camera_right/image_raw}
+use_sim_time: false
