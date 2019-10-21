@@ -233,7 +233,8 @@ class Flystate2PhidgetsAnalog:
 #                                  self.v0aa*AA + self.v0ar*AR + \ # Angle + Radius
 #                                  self.v0xi*XI                    # Aux intensity
                        
-        return voltages.clip(-10.0, 10.0)
+        #return voltages.clip(-10.0, 10.0)
+        return voltages.clip(-5.0, 5.0)
 
     
         
