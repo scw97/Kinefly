@@ -10,6 +10,11 @@ import Phidgets
 import Phidgets.Devices.Analog
 from setdict import SetDict
 
+# WBD Devel
+##############################################################################
+from std_msgs.msg import Float64MultiArray
+##############################################################################
+
 
 ###############################################################################
 ###############################################################################
@@ -56,12 +61,18 @@ class Flystate2PhidgetsAnalog:
         self.analog.setOnAttachHandler(self.attach_callback)
         self.analog.setOnDetachHandler(self.detach_callback)
 
+        # WBD Devel
+        ##############################################################################
+        self.analog_pub = rospy.Publisher('/analogvalues', Float64MultiArray)
+        ##############################################################################
+
         # Subscriptions.        
         self.subFlystate = rospy.Subscriber('%s/flystate' % self.namespace.rstrip('/'), MsgFlystate, self.flystate_callback, queue_size=1000)
         self.subCommand  = rospy.Subscriber('%s/command' % self.nodename.rstrip('/'), String, self.command_callback, queue_size=1000)
         #rospy.sleep(1) # Allow time to connect publishers & subscribers.
 
         self.bInitialized = True
+
         
         
     def attach_callback(self, phidget):
@@ -153,6 +164,12 @@ class Flystate2PhidgetsAnalog:
         
         if (self.bAttached):
             voltages = self.voltages_from_flystate(flystate)
+
+            # WBD Devel
+            ##############################################################################
+            multi_array = Float64MultiArray(data=voltages)
+            self.analog_pub.publish(multi_array)
+            ##############################################################################
 
             for i in range(4):
                 if (self.enable[i]):
